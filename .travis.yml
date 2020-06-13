@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: BBvqoVb7PVdB/m2c3Hc+7tWznbz0xydnU1oLIUZ3rzpgTk3lx7iwiEvNwFSirBLx9AKb87a9q4jTFiRmLxej2ro5PScsxTt1mWvGfgmHEI3RbTUAuViyR6BsPEINMLwZA9dOnDfR9SUsWF4UVFlQ2dncj3A7i+f1iOgVmj2eDIwytjYrl7B7CXEGC7yLAiOr0f/GpTlmujviwh1u5J+Qi4MF8q54pBFvx1Uz2qjgcF1M8DBlWXDgfAar4S5FjV5yeJr4DNxPD/JhP6Ys7jTGwZO9FBR8ahVeJQ1ReHnrDDsgtbSdLtVDRYh485N07rywdyDRO7FD8sINd/n5aRheArvt9jaeTTmDFzPWPAOq/MyxdrhqrB62O6REvFaTMwqi3PvnAR6SZOeBdiNn45fMPED6oMvqJlYKPBAPcOt/YqKva19YqY7DeEj+VQghtnAFygCUbUDMMO4QQUjrbIn5du72cNMUnUSW53rbZu/mrT12rcq/poa34bUAyYBob1cuhZc2ZXzOli9RsT/4jfBf6CbTsGGEGxdu8jN4+clnN4bEHOBaaOSL1nLvvHW3hYPxocnbxNcQJDdHu26X/Hihao0yFQjlxT5sWI6n9zQYiVt2gOh2vfR0xg1CaoAC8Cmap2W58hxQ0zE34FRoJ0Oqm8sUb2z+v1ZjveS7qd3eOTM=
+app: bb-add-to-cart
+true:
+  repo: manusankar9/bb-add-to-cart
+  branch: master
