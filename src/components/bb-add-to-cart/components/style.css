@@ -1,0 +1,15 @@
+.images{
+    display: flex;
+}
+.selectedItems{
+    display: flex;
+}
+.Quantity{
+    padding-right: 30px;
+}
+.item{
+    padding-right: 30px;
+}
+.count{
+    padding-right: 30px;
+}
