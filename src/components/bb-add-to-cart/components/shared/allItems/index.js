@@ -3,7 +3,7 @@ import React from 'react';
 export default (props) => {
 
     return <div className='img'>
-        <img src={props.src} />
+        <img src={props.src} alt = '' />
         <p> {props.quantity}</p>
         {props.item}
 

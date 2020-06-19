@@ -9,8 +9,12 @@ import './style.css'
 
 const BbAddToCart = (props) => {
 
-    useEffect(async () => {
-        props.fetchAllItems();
+    useEffect(() => {
+        async function fetchItemsData (){
+            await props.fetchAllItems();
+        }
+
+       fetchItemsData();
     }, [])
 
     const handlerADD = (AddButtonEnable,id,item,Quantity,count,price)=>{
